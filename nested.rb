@@ -55,6 +55,8 @@ def dennis_ritchies_language
           :known_for => "Unix",
           :languages => ["C"]
         }
+        
+        puts programmer_hash[:dennis_ritchie][:languages]
      }
 end
 
@@ -123,7 +125,7 @@ def adding_to_dennis
         },
         :dennis_ritchie => {
           :known_for => "Unix",
-          :languages => ["C"]
+          :languages => ["C", "Golang"]
         }
      }
 
