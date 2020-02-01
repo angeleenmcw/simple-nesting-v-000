@@ -36,7 +36,7 @@ def alan_kay_is_known_for
           :known_for => "Unix",
           :languages => ["C"]
         }
-      puts programmer_hash[:alan_kay]  
+      puts programmer_hash[:alan_kay][:known_for] 
      }
 end
 
@@ -67,6 +67,10 @@ def adding_matz
 
 	programmer_hash = 
  		{
+        :yukihiro_matsumoto => {
+          :known_for => "Ruby",
+          :languages => ["LISP", "C"]
+        },
         :grace_hopper => {
           :known_for => "COBOL",
           :languages => ["COBOL", "FORTRAN"]
@@ -92,7 +96,7 @@ def changing_alan
           :languages => ["COBOL", "FORTRAN"]
         },
         :alan_kay => {
-          :known_for => "Object Orientation",
+          :known_for => [alans_new_info],
           :languages => ["Smalltalk", "LISP"]
         },
         :dennis_ritchie => {
